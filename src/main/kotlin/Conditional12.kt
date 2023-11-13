@@ -5,7 +5,7 @@ import java.io.OutputStreamWriter
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val writer = BufferedWriter(OutputStreamWriter(System.out))
-    var input: String?
+    var input: String ?
 
     while (readLine().also { input = it } != null) {
         val num = input!!.split(" ")

@@ -1,6 +1,12 @@
-import kotlin.math.pow
+import java.util.Scanner
 
-fun main() {
-    val n = readLine()!!.toInt()
-    println(((2.0.pow(n) + 1).pow(2)).toInt())
+fun main() = with(Scanner(System.`in`)) {
+    val N = nextInt()
+    var result = 2
+
+    for (i in 0 until N) {
+        result += (result - 1)
+    }
+
+    print(result * result)
 }

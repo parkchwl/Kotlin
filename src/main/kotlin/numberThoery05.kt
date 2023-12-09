@@ -1,3 +1,5 @@
+import kotlin.math.sqrt
+
 fun main() {
     val m = readLine()!!.toInt()
     val n = readLine()!!.toInt()
@@ -7,7 +9,7 @@ fun main() {
     var found = false
 
     for (i in m..n) {
-        if (isPrime(i)) {
+        if (IsPrime(i)) {
             sum += i
 
             if (!found || i < minPrime) {
@@ -25,11 +27,11 @@ fun main() {
     }
 }
 
-fun isPrime(num: Int): Boolean {
+fun IsPrime(num: Int): Boolean {
     if (num < 2) {
         return false
     }
-    for (i in 2..Math.sqrt(num.toDouble()).toInt()) {
+    for (i in 2..sqrt(num.toDouble()).toInt()) {
         if (num % i == 0) {
             return false
         }

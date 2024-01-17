@@ -8,7 +8,7 @@ fun main() {
 
     for (i in 0 until N) {
         arr[i][0] = scanner.next()
-        arr[i][1] = scanner.next() 
+        arr[i][1] = scanner.next()
     }
 
     arr.sortWith(compareBy { it[0].toInt() })

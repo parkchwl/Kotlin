@@ -1,6 +1,6 @@
 fun main() {
     val n = readLine()!!.toInt()
-    val dp = IntArray(n + 1) { it }  
+    val dp = IntArray(n + 1) { it }
 
     for (i in 1..n) {
         var j = 1

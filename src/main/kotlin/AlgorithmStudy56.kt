@@ -9,7 +9,7 @@ fun main() {
     val arr = IntArray(num){ br.readLine().toInt() }
 
     dp[1] = arr[0]
-    if(num > 1) { 
+    if(num > 1) {
         dp[2] = arr[0] + arr[1]
     }
     for(i in 3 .. num) {
